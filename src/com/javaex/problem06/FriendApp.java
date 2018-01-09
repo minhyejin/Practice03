@@ -12,9 +12,15 @@ public class FriendApp {
         System.out.println("친구를 3명 등록해 주세요");
        
         for(int i=0; i<friendArray.length; i++ ) {
-        	  String input =sc.nextLine();
-        	String [] fr = input.split(" ");
-        	friendArray[i]=new Friend();
+        	  String info =sc.nextLine();
+        	String [] input = info.split(" ");
+        	Friend fr =new Friend();
+        	
+        	fr.setName(input[0]);
+        	fr.setHp(input[1]);
+        	fr.setSchool(input[2]);
+        	
+        	friendArray[i]=fr;
         } 
 
         for (int i = 0; i < friendArray.length; i++) {
