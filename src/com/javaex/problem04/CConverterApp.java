@@ -11,10 +11,12 @@ public class CConverterApp {
         CConverter.setRate(1118.70);
         
         
+        
         //백만원을 달러로 출력
-
+        System.out.println("백만원은"+CConverter.toDoller(1000000)+"입니다.");
         
         //100달려를 원으로 출력
+        System.out.println("100달러는"+CConverter.toKWR(100)+"입니다.");
         
         
     }
